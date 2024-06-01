@@ -143,7 +143,7 @@ jobs:
         run: FOUNDRY_PROFILE=reference MOAT_PROFILE=reference forge test -vvv
   
   forge-offerers:
-    name: Run Contract Offerer Forge Tests (via_ir = false; fuzz_runs = 1000)
+    name: Run Contract Offerer Forge Tests (via_ir = true; fuzz_runs = 1000)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
